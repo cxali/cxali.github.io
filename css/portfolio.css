@@ -62,7 +62,6 @@ h1 {
   50% { border-color: orange }
 }
 
-/*****/
 .main {
   background-color: #FFF;
 /*   width: 400px; */
@@ -76,7 +75,6 @@ h1 {
   width: 500px;
   height: 500px;
   background-color: #FFF;
-/*   background-color: dodgerblue; */
   border: 1px solid #CCC;
   border-radius: 5px;
   display: flex;
@@ -87,23 +85,20 @@ h1 {
 }
 
 .bg{
-    background-image: url("https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
-  opacity: 0.7;
+
 }
 
 h2 {
   padding: 10px;
   color: #FFF;
   text-shadow: 3px 3px 4px #000000;
-  font-size: 40px;
+  font-size: 58px;
   font-weight: 600;
 }
 
-/****/
 /* Footer */
-
-
 footer {
   padding: 4rem 0;
   border-top: 1px solid #999999;
@@ -111,10 +106,5 @@ footer {
   
   color: #999999;
   text-align: center;
-  /* EM 4.
-Set the font size in the footer (“© Bana’s Travel Blog”) to 0.75em. 
-  font-size: 0.75em;*/
-  /* REM 9.
-Set the font size of the footer to 1.125rem. */
   font-size: 1.125rem;
 }
