@@ -1,62 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
+        <title>Portfolio</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    </head>
+    <body>
+        <header class="site-header sticky-top bg-light">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo-container">
+                    <img src="./resources/images/Ca.png" alt="CA logo" class="logo">
+                </div>
+                <nav>
+                    <ul class="main-nav d-flex list-unstyled mb-0">
+                        <li class="ms-3"><a href="#aboutme">About Me</a></li>
+                        <li class="ms-3"><a href="#projects">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main class="container-fluid mt-5">
+            <section class="hero row align-items-center z-0" id="aboutme">
+                <div class="col-md-6 text-center">
+                    <img src="./resources/images/hero-img.png" alt="" class="img-fluid girl-tech">
+                </div>
+                <div class="col-md-6 text-center">
+                    <h1>Hello there!👋</h1>
+                    <p>With a love for learning and a commitment to constant enhancement, I embrace every opportunity to elevate my expertise. Here are the skills I have so far:</p>
+                    
+                    <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/html5.png" class="skill-logo" alt="HTML logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/css3.png" class="skill-logo" alt="CSS3 logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/python.png" class="skill-logo" alt="Python3 logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/js.png" class="skill-logo" alt="Javascript logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/php.png" class="skill-logo" alt="PHP logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/sql.png" class="skill-logo" alt="SQL logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/myssql.png" class="skill-logo" alt="MySQL logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/wix.png" class="skill-logo" alt="Wix logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/wordpress.png" class="skill-logo" alt="Wordpress logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/figma.png" class="skill-logo" alt="Figma logo"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/canva.png" class="skill-logo" alt="Canva logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/photoshop.png" class="skill-logo" alt="Adobe Photoshop logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/illustrator.png" class="skill-logo" alt="Adobe Illustrator logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/bootstrap.png" class="skill-logo" alt="Bootstrap logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/git.png" class="skill-logo" alt="Git logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/github.png" class="skill-logo" alt="Github logo"></button>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+                                        <button class="btn-skill"><img src="./resources/images/skills/unix.png" class="skill-logo" alt="Unix logo"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+                    <br>
+                    <a href="#creative-section" class="btn btn-secondary btn-lg" role="button">Discover More</a>
+                </div>
+            </section>
 
-<head>
-  <title>Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon_io/site.webmanifest">
-</head>
+            <!-- Projects-->
+            <section class="sunshine-container">
+                <div class="icon">
+                    <a href="#projects"><img src="./resources/images/heart-button.png" alt="Heart Icon"></a>
+                </div>
+                <div class="sunshine text-center py-5 position-relative">
+                    <div class="col-md-6 offset-md-3">
+                        <p class="lead">I am deeply committed to self-improvement, always setting new goals and challenging myself to reach higher levels of proficiency and understanding.</p>
+                    </div>
+                </div>
+            </section>
 
-<body>
-  <div id="banner">
-    <div class="container">
-      <h1>Hey, I'm</h1>
-      <div class="typewriter">
-        <h1>Ali!</h1>
-      </div>
-    </div>
-  </div>
-  
-  <div class='main'>
-    <div class='content bg'>
-      <h2>Dedicated to constant improvement, check out the projects I've completed </h2>
-    </div>
-    <div class='content'>
-      <ol>My completed projects in Codecademy:
-        <li><a href="./fashion-blog.html">Fashion Blog</a></li>
-        <li><a href="./wine-festival-schedule.html">Wine Festival Schedule</a></li>
-        <li><a href="./ny-city-blog.html">New York City Blog</a></li>
-        <li><a href="./healthy-recipes.html">Healthy Recipes</a></li>
-        <li><a href="./olivia-woodruff-portfolio.html">Olivia Woodruff Portfolio</a></li>
-        <li><a href="./davies-burgers.html">The Box Model: Davie's Burgers</a></li>
-        <li><a href="./broadway.html">Broadway</a></li>
-        <li><a href="./typography.html">Typography</a></li>
-        <li><a href="./summit.html">The Summit</a></li>
-        <li><a href="./freshdeals-blueberries.html">FreshDeals: Blueberries</a></li>
-        <li><a href="./todo_app.html">Flexbox: To-Do App</a></li>
-        <li><a href="./pupspa.html">Grid: PupSpa</a></li>
-        <li><a href="./task_board.html">Grid: Task Board</a></li>
-        <li><a href="./tsunami_coffee.html">Responsive Design: Tsunami Coffee</a></li>
-        <li><a href="https://onecompiler.com/python/42be86676">Echo Chatbot</a></li>
-        <li><a href="https://onecompiler.com/python/422txkh5j">Getting Ready for Physics Class</a></li>
-        <li><a href="https://onecompiler.com/python/4239kbsbv">Magic 8-Ball - Control Flow</a></li>
-        <li><a href="https://onecompiler.com/python/423cebqws">Sal's Shipping - Control Flow</a></li>
-        <li><a href="https://onecompiler.com/python/423hs9cjx">Coffee Chatbot - Chatbot Evolution</a></li>
-        <li><a href="https://onecompiler.com/python/423qucbrj">Gradebook - Lists</a></li>
-        <li><a href="https://onecompiler.com/python/423wk6grq">Len's Slice - Python lists</a></li>
-        <li><a href="https://onecompiler.com/python/424a9muug">Looping Coffee Chatbot - LOOPS</a></li>
-        <li><a href="https://onecompiler.com/python/424hknq4q">Scrabble - DICTIONARIES</a></li>
-      </ol>
-    </div>
-  </div>
-  
-  <footer>
-    <span>&copy; Ali C 2024</span>
-  </footer>
+            <section class="container" id="projects">
+                <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                        <p>Browse through my projects by selecting the categories below:</p>
+                        <div class="list-group">
+                            <a href="#recent-section" class="list-group-item list-group-item-action active" aria-current="true" onclick="showSection('recent-section')">
+                                Client Projects
+                            </a>
+                            <a href="#codecademy-projects" class="list-group-item list-group-item-action" onclick="showSection('codecademy-projects')">Codecademy Projects</a>
+                        </div>
+                    </div>
+                
+                    <!-- Recent Work -->
+                    <div class="col-md-10 text-center section" id="recent-section">
+                        <h2 class="project-heading">Recent Work</h2>
 
-</body>
+                        <div class="row">
+                            <div class="col-md-4 offset-md-4 col-sm-8 offset-sm-2">
+                            <div class="card">
+                                <img src="./resources/images/project-previews/2mntrading.png" class="card-img-top1" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">2M&N Trading</h5>
+                                <p class="card-text">Designed and developed a website to enhance the client's online presence, showcasing their products and providing essential information for potential customers.</p>
+                                <a href="https://www.2mntrading.com/" target="_blank" class="btn btn-primary">Visit</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Codecademy Projects -->
+                    <div class="col-md-10 text-center section d-none" id="codecademy-projects">
+                        <h2 class="project-heading">Codecademy Projects</h2>
+                        
+                        <div class="row" id="initial-cards">
+                            <!-- Initial cards will be dynamically inserted here -->
+                        </div>
+                        
+                        <button id="load-more-btn" class="btn btn-primary mt-3">Load More</button>
+                        
+                        <div id="codecademyCarousel" class="carousel slide d-none" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="carousel-inner">
+                                <!-- Carousel items will be dynamically inserted here -->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#codecademyCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon second" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#codecademyCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon second" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="container-fluid" id="creative-section">
+                <div class="row creative-bg">
+                    <div class="hero-text text-center">
+                        <h2 class="creative-heading">Creative Showcase</h2>
+                        <p class="creative-text">Designs & Edits</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container text-center">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 design-short-intro">
+                        <p>Aside from having technical skills, I'm also passionate about honing my creative abilities and believe that continuous learning and practice are key to improvement. Choose from these categories to see my works:</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 designs-button-section">
+                        <figure>
+                            <a href="https://www.canva.com/design/DAGM4TKCWEs/h1GvbNArd2DTmHkU1TiwFQ/watch?utm_content=DAGM4TKCWEs&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank"><img src="./resources/images/skills/graphic-designer.png" alt="Graphic Designer Illustration" class="design-buttons"></a>
+                            <figcaption>Graphic Designs</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="https://www.canva.com/design/DAGM5kjOkHM/K4ask2UwV2c_nEX5o2jB-g/watch?utm_content=DAGM5kjOkHM&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank"><img src="./resources/images/skills/video-editor.png" alt="Video Editor Illustration" class="design-buttons second-design-button"></a>
+                            <figcaption>Video Edits</figcaption>
+                        </figure>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="container-fluid text-center py-3">
+            <p>&copy; 2024 CA. All rights reserved.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="./resources/js/carousel.js"></script>
+        <script src="./resources/js/project-section.js"></script>
+        <script src="./resources/js/other-projects.js"></script>
+    </body>
 </html>
