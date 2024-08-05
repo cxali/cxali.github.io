@@ -387,8 +387,12 @@ footer {
     }
 
     .creative-bg {
-        height: 25vh;
+        height: 35vh;
         animation: none;
+    }
+
+    .design-short-intro {
+        padding: 25px 0 0 0;
     }
 
     .designs-button-section {
