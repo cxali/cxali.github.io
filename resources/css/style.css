@@ -280,7 +280,7 @@ footer {
     }
 
     #codecademy-projects {
-        height: 660px;
+        height: 825px;
     }
 
 }
@@ -322,7 +322,7 @@ footer {
     }
     
     #codecademy-projects {
-        height: 875px;
+        height: 1030px;
     }
 }
 
@@ -331,6 +331,30 @@ footer {
     .custom-lg-2-4 {
         flex: 0 0 33.3333%;
         max-width: 33.3333%;
+    }
+
+    .text-margin {
+        margin: 20px;
+    }
+
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .carousel-control-next {
+        position: absolute;
+        top: auto;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10%;
+        height: 30px;
+    }
+
+    /* Add padding to the container to avoid horizontal scroll */
+    .content-container {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .sunshine-container .icon img {
@@ -342,7 +366,7 @@ footer {
 
     .sunshine .lead {
         font-size: 1rem;
-        margin: 0;
+        margin: 10px 0;
         font-weight: 400;
     }
 
@@ -355,15 +379,16 @@ footer {
     }
     
     #recent-section {
-        height: 630px;
+        height: 550px;
     }
     
     #codecademy-projects {
-        height: 1025px;
+        height: 1170px;
     }
 
     .creative-bg {
         height: 25vh;
+        animation: none;
     }
 
     .designs-button-section {

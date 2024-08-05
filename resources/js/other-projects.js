@@ -30,7 +30,7 @@ const cardsData = [
 
 function createCard(card) {
     return `
-        <div class="col-4 col-sm-3 col-md-3 col-lg-2 custom-lg-2-4 mb-3">
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
             <div class="card">
                 <img src="${card.img}" class="card-img-top" alt="${card.title}">
                 <div class="card-body">
