@@ -267,6 +267,13 @@ footer {
 
 /* Adjust the column sizes for different screen sizes */
 
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    #codecademy-projects {
+        height: 665px !important;
+    }
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .custom-lg-2-4 {
