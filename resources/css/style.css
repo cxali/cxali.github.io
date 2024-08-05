@@ -1,0 +1,373 @@
+/* NAVIGATION */
+.logo {
+    max-height: 50px; /* Adjust this value as needed */
+}
+
+.main-nav {
+    padding: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000; /* Adjust the color as needed */
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+main.container-fluid.mt-5 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* HERO */
+.girl-tech {
+    max-width: 90%;
+}
+
+/* Adjust button sizes */
+.btn-skill {
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+.skill-logo {
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.skill-logo:hover {
+    filter: none;
+}
+
+/* Adjust the position of carousel controls */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-size: 100%, 100%;
+}
+
+
+/* PROJECTS */
+.sunshine {
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+    overflow: hidden;
+    padding-bottom: 100px; /* Adjust based on your design */
+    margin-top: 30px;
+}
+
+.sunshine::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: -44%;
+    transform: translateX(16.5%);
+    width: 141%;
+    height: 400px;
+    background-color: #b0becc;
+    border-radius: 57%;
+    z-index: -1;
+}
+
+.sunshine-container .icon {
+    position: relative; /* Changed from sunshine-container.icon */
+    z-index: 2; /* Ensures the icon is above the sunshine div */
+    text-align: center;
+    /* margin: auto;
+    left: 0;
+    right: 0; */
+}
+
+.sunshine-container .icon img {
+    width: 100px;
+    position: absolute;
+    top: -48px;
+}
+
+.sunshine .lead {
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+    font-weight: 400;
+}
+
+#projects {
+    padding: 30px 0;
+}
+
+.project-heading {
+    margin: 50px;
+}
+
+/* .section {
+    display: none;
+}
+
+.section:not(.d-none) {
+    display: block;
+} */
+
+/* OTHERS */
+.custom-lg-2-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top1 {
+    height: auto;
+}
+
+.card-img-top {
+    height: 80px;
+}
+
+h5.card-title {
+    font-size: 1rem ;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon.second,
+.carousel-control-next-icon.second {
+    background-color: black;
+    border-radius: 50%;
+}
+
+#recent-section {
+    height: 570px;
+}
+
+#codecademy-projects {
+    height: 620px;
+}
+
+/* CREATIVE BG */
+@keyframes zoom {
+    0% {
+      background-size: 100%;
+    }
+    100% {
+      background-size: 120%;
+    }
+}
+
+.creative-bg {
+    background-image: url("../images/creative-bg.svg");
+    color: #fff;
+  
+    /* Set a specific height */
+    height: 50vh;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+    /* Add animation */
+    animation: zoom 10s infinite alternate;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-text {
+    max-width: 90%;
+}
+
+/* DESIGNS SECTION */
+
+.creative-heading {
+    font-size: 7em;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px #a19b9b; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+}
+
+.creative-text {
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 1px 1px 0px #a19b9b; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+}
+
+.design-short-intro {
+    padding: 50px 0 0 0;
+}
+
+.designs-button-section {
+    padding: 30px 0 30px 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.design-buttons {
+    --s: 15px;  /* size of the frame */
+    --b: 2px;   /* border thickness */
+    --w: 300px; /* width of the image */
+    --c: #2b44ff;
+    
+    width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+      linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+      linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid rgba(83, 81, 81, 0.6);
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+  }
+
+.second-design-button {
+    --c: #c1dee2;--b:1px;--s: 18px;
+}
+
+.design-buttons:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+}
+
+footer {
+    border-top: 1px solid #b6b1b1;
+}
+
+/* Adjust the column sizes for different screen sizes */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .custom-lg-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .creative-heading {
+        font-size: 6em;
+        line-height: 0.9;
+    }
+
+    #codecademy-projects {
+        height: 660px;
+    }
+
+}
+
+/* Medium devices (tablets) with a width from 768px up to large devices at 991.98px */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .custom-lg-2-4 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .sunshine-container .icon img {
+        width: 60px;
+        position: absolute;
+        top: 2px;
+        transform: translate(-50%, -50%);
+    }
+
+    .sunshine .lead {
+        font-size: 1.25rem;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    a.list-group-item.list-group-item-action {
+        font-size: 12px;
+    }
+
+    .creative-heading {
+        font-size: 5em;
+        line-height: 0.9;
+    }
+    .creative-text {
+        font-size: 1em;
+    }
+
+    #recent-section {
+        height: 630px;
+    }
+    
+    #codecademy-projects {
+        height: 875px;
+    }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .custom-lg-2-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+
+    .sunshine-container .icon img {
+        width: 60px;
+        position: absolute;
+        top: 2px;
+        transform: translate(-50%, -50%);
+    }
+
+    .sunshine .lead {
+        font-size: 1rem;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    .creative-heading {
+        font-size: 3em;
+        line-height: 0.9;
+    }
+    .creative-text {
+        font-size: 0.9em;
+    }
+    
+    #recent-section {
+        height: 630px;
+    }
+    
+    #codecademy-projects {
+        height: 1025px;
+    }
+
+    .creative-bg {
+        height: 25vh;
+    }
+
+    .designs-button-section {
+        flex-direction: column;
+    }
+}
+
